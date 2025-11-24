@@ -1,0 +1,28 @@
+:root{
+  --bg:#fbfbf8;
+  --card:#ffffff;
+  --accent:#6b8e23;
+  --muted:#666;
+}
+*{box-sizing:border-box}
+body{font-family:YuGothic, "Meiryo", sans-serif;background:var(--bg);color:#222;margin:0;line-height:1.6}
+.container{max-width:1000px;margin:0 auto;padding:1rem}
+.site-header{background:linear-gradient(90deg,#fff 0%, #f6fff6 100%);border-bottom:1px solid #eee}
+.site-header .container{display:flex;align-items:center;justify-content:space-between}
+.logo{margin:0;padding:0.5rem 0;color:var(--accent)}
+nav a{margin-left:1rem;color:var(--muted);text-decoration:none}
+.hero{padding:2rem 0}
+.hero-inner{display:flex;gap:2rem;align-items:center}
+.hero-text h2{margin:0 0 .5rem;font-size:1.6rem}
+.btn{display:inline-block;margin-top:.8rem;padding:.6rem 1rem;background:var(--accent);color:#fff;border-radius:6px;text-decoration:none}
+.hero-image img{max-width:220px;width:100%;height:auto}
+.about,.teas,.contact{padding:2rem 0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.card{background:var(--card);padding:1rem;border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.site-footer{background:#fff;border-top:1px solid #eee;padding:1rem 0;text-align:center;color:var(--muted)}
+
+@media (max-width:800px){
+  .hero-inner{flex-direction:column;text-align:center}
+  .grid{grid-template-columns:1fr}
+  nav{display:none}
+}
